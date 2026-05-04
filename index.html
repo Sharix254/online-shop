@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Манай Дэлгүүр — Үнэртэй Ус</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="logo">М<span>Д</span></a>
+      <ul class="nav-links">
+        <li><a href="#products">Бүтээгдэхүүн</a></li>
+        <li><a href="#about">Бидний тухай</a></li>
+        <li><a href="#contact">Холбоо барих</a></li>
+      </ul>
+      <div class="nav-cart">
+        <button class="cart-btn" onclick="toggleCart()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-sub">✦ Шинэ цуглуулга 2025 ✦</p>
+      <h1>Үнэр бол<br/><em>таны гарын үсэг</em></h1>
+      <p class="hero-desc">Дэлхийн шилдэг брэндүүдийн үнэртэй ус — Монголд хамгийн боломжийн үнээр.</p>
+      <a href="#products" class="btn-primary">Бүтээгдэхүүн үзэх</a>
+    </div>
+    <div class="hero-visual">
+      <div class="bottle-wrap">
+        <div class="bottle">
+          <div class="bottle-neck"></div>
+          <div class="bottle-body">
+            <div class="bottle-shine"></div>
+            <span>No.1</span>
+          </div>
+          <div class="bottle-base"></div>
+        </div>
+        <div class="scent-ring r1"></div>
+        <div class="scent-ring r2"></div>
+        <div class="scent-ring r3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature-item">
+      <div class="feat-icon">✦</div>
+      <h3>Баталгаат бараа</h3>
+      <p>100% оригинал, импортын бүтээгдэхүүн</p>
+    </div>
+    <div class="feature-item">
+      <div class="feat-icon">◈</div>
+      <h3>Хурдан хүргэлт</h3>
+      <p>Улаанбаатарт 24 цагт хүргэнэ</p>
+    </div>
+    <div class="feature-item">
+      <div class="feat-icon">◇</div>
+      <h3>Өрсөлдөхүйц үнэ</h3>
+      <p>Зах зээлийн хамгийн хямд үнэ</p>
+    </div>
+    <div class="feature-item">
+      <div class="feat-icon">❋</div>
+      <h3>Буцаан авах</h3>
+      <p>7 хоногийн дотор буцаан авах боломж</p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products-section" id="products">
+    <div class="section-header">
+      <p class="section-sub">Манай онцлох бүтээгдэхүүн</p>
+      <h2>Шилдэг Үнэртэй Ус</h2>
+    </div>
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="about-text">
+      <p class="section-sub">Бидний тухай</p>
+      <h2>Үнэр — мэдрэмж,<br/><em>дурсамж, таних тэмдэг</em></h2>
+      <p>Манай дэлгүүр 2018 оноос хойш Монголын хэрэглэгчдэд дэлхийн шилдэг үнэртэй усыг хүргэж ирсэн. Бид зөвхөн баталгаажсан, оригинал бүтээгдэхүүнийг борлуулдаг.</p>
+      <p>Таны хэрэгцээнд нийцсэн үнэрийг олоход туслах мэргэжлийн зөвлөгөөч бидэнтэй холбогдоорой.</p>
+      <a href="#contact" class="btn-secondary">Холбоо барих</a>
+    </div>
+    <div class="about-visual">
+      <div class="about-bottles">
+        <div class="ab ab1"></div>
+        <div class="ab ab2"></div>
+        <div class="ab ab3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-header">
+      <p class="section-sub">Хэрэглэгчдийн сэтгэгдэл</p>
+      <h2>Тэд юу хэлдэг вэ?</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Үнэртэй ус маш сайхан, баглаа боодол нь ч гоё. Дараагийн удаа дахин захиална!"</p>
+        <span class="testi-name">— Оюунаа Б.</span>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Дэлхийн дэлгүүрийнхтэй ижил үнэтэй байсан ч хүргэлт хурдан, найдвартай."</p>
+        <span class="testi-name">— Батболд Д.</span>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★☆</div>
+        <p>"Зөвлөгөөч маш сайн тусалсан, би ямар үнэр авахаа мэдэхгүй байсан."</p>
+        <span class="testi-name">— Номин Г.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="section-header">
+        <p class="section-sub">Холбоо барих</p>
+        <h2>Бидэнтэй ярилцаарай</h2>
+      </div>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Нэр</label>
+            <input type="text" placeholder="Таны нэр" required />
+          </div>
+          <div class="form-group">
+            <label>Утас</label>
+            <input type="tel" placeholder="9999-9999" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Мессеж</label>
+          <textarea rows="4" placeholder="Асуулт, захиалга..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Илгээх</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">М<span>Д</span></a>
+        <p>Монгол дахь шилдэг үнэртэй усны дэлгүүр</p>
+      </div>
+      <div class="footer-links">
+        <h4>Холбоосууд</h4>
+        <ul>
+          <li><a href="#products">Бүтээгдэхүүн</a></li>
+          <li><a href="#about">Бидний тухай</a></li>
+          <li><a href="#contact">Холбоо барих</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Холбоо барих</h4>
+        <p>📞 9911-2233</p>
+        <p>📧 info@manaidelguur.mn</p>
+        <p>📍 Улаанбаатар, Монгол</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Манай Дэлгүүр. Бүх эрх хуулиар хамгаалагдсан.</p>
+    </div>
+  </footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Сагс</h3>
+      <button onclick="toggleCart()">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Сагс хоосон байна</p>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        Нийт: <strong id="cartTotal">₮0</strong>
+      </div>
+      <button class="btn-primary" style="width:100%" onclick="checkout()">Захиалах</button>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
